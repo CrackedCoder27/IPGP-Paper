@@ -1,19 +1,50 @@
-# LaTeX build files
+# =========================
+# LaTeX auxiliary files
+# =========================
 *.aux
 *.log
-*.out
-*.toc
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+*.toc
+*.out
+*.lof
+*.lot
+*.bbl
 *.bcf
+*.blg
 *.run.xml
+*.nav
+*.snm
+*.vrb
 
-# Editor files
+# =========================
+# LaTeX temporary files
+# =========================
+*.tmp
+*.bak
 *.swp
 *.swo
-*~
+*.dvi
+*.xdv
 
-# OS files
+# =========================
+# Editor / OS files
+# =========================
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
+
+# =========================
+# Python / Jupyter (if used)
+# =========================
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# =========================
+# Build/output directories
+# =========================
+build/
+out/
