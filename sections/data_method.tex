@@ -1,1 +1,113 @@
 \section{Data and Methodology}
+
+\subsection{Which methods are aplied to investigate our problem}
+\begin{itemize}
+    \item RSTF deconvolution.
+    \item Teleseismic phase picking and preparation of the data for inversion.
+    \item Finite-fault kinematic inversion using teleseismic and RSTF data to get slip distribution for both the 2015 and 2025 earthquakes.
+    \item Details of these methods will be provided in the supporting information section. 
+\end{itemize}
+
+\subsection{How the method is applied}
+\subsubsection{Data Selection and Teleseismic Preprocessing for Inversion}
+\begin{itemize}
+    \item Continuous three-component waveform time series and corresponding metadata were retrieved for the 2015 and 2025 earthquakes from the GEOSCOPE database from the networks: IU, II, GT, G, GE, DK, CN.
+    \item For RSTF deconvolution, we retrieved data for a radius of 40 degrees around the epicentres of the 2015 and 2025 earthquakes.
+    \item For RSTF analysis, we selected the same earthquake which happened on 05/04/2025 as our EGF. Why this earthquake was selected as EGF will be explained in the supporting information section.
+    \item Instrument response was also removed to maintain the homogeneity of the data.
+    \item For teleseismic phase picking, we selected data for a radius of 80 degrees to avoid upper-mantle triplications and core reflections.
+    \item The teleseismic P- and S-wave data were windowed for 70 and 115 s, respectively, with arrival-time uncertainties of 2.5 and 7 s. The waveforms were processed using low- and broadband smoothing periods of 33 and 8 s, respectively, and a high-frequency cutoff of 0.005 Hz was applied.
+\end{itemize}
+\subsubsection{Finite-fault kinematic inversion}
+\subsubsection*{Fault Plane Geometry}{}
+% \begin{itemize}
+%     \item \textbf{Fault plane geometry: } For both the inversion, we used same fault plane geomtry which is defined by: \\ \begin{itemize}
+%         \item Strike: 098$^{\circ}$
+%         \item Initial Dip: 80$^{\circ}$
+%         \item Rake variation: $\pm 30^{\circ}$
+%         \item Dip variation: $\pm 30^{\circ}$
+%         \item 
+%     \end{itemize}
+% \end{itemize}
+\textbf{2015 earthquake}
+\begin{itemize}
+    \item Strike: $98^\circ$
+    \item Initial dip: $75^\circ$
+    \item Initial rake: $175^\circ$
+    \item Maximum rake deviation: $\pm30^\circ$
+    \item Maximum dip deviation: $\pm30^\circ$
+    \item Fault length: $198$ km
+    \item Fault width: $30$ km
+    \item Fault-centre coordinates: $(-77.24,\ 10.86,\ 18)$ km
+    \item Hypocenter: subfault 96
+\end{itemize}
+
+\textbf{2025 earthquake}
+\begin{itemize}
+    \item Strike: $98^\circ$
+    \item Initial dip: $80^\circ$
+    \item Initial rake: $175^\circ$
+    \item Maximum rake deviation: $\pm30^\circ$
+    \item Maximum dip deviation: $\pm30^\circ$
+    \item Fault length: $200$ km
+    \item Fault width: $32$ km
+    \item Fault-centre coordinates: $(-63.47,\ 8.22,\ 19)$ km
+    \item Hypocenter: subfault 71
+\end{itemize}
+
+
+\subsubsection*{Fault Discretization}
+
+\textbf{2015 earthquake}
+\begin{itemize}
+    \item Subfault dimensions: $6 \times 6$ km
+    \item Fault dimensions: $198 \times 30$ km
+    \item Hypocenter subfault: 96
+\end{itemize}
+
+\textbf{2025 earthquake}
+\begin{itemize}
+    \item Subfault dimensions: $8 \times 8$ km
+    \item Fault dimensions: $200 \times 32$ km
+    \item Hypocenter subfault: 71
+\end{itemize}
+
+\subsubsection*{Inverted Source Parameters}
+
+The finite-fault inversion solves for the spatial and temporal characteristics of
+the rupture. The principal source parameters include: slip amplitude, rake, spatial variation in fault dip
+
+\subsubsection*{Inversion Configuration}
+
+The principal numerical parameters used in the finite-fault inversion include:
+
+\begin{itemize}
+    \item Rigidity: $4 \times 10^{11}$ Pa
+    \item Initial rupture velocity: $3.5$ km/s
+\end{itemize}
+
+The complete inversion parameter configuration is provided in the Supporting
+Information.
+
+\subsubsection*{Final Inversion Products}
+
+For each earthquake, the inversion provides:
+
+\begin{itemize}
+    \item Slip distribution
+    \item Rake distribution
+    \item Rupture-time distribution
+    \item Dip distribution
+    \item Synthetic waveforms
+    \item Observed--synthetic waveform misfit
+\end{itemize}
+
+\subsubsection{Comparison of the 2015 and 2025 earthquake slip distributions}
+\begin{itemize}
+    \item Slip distributions are plotted for both the 2015 and 2025 earthquakes. The slip distributions are compared to understand the similarities and differences in the rupture processes of the two events.
+    \item Contours of the slips from both earthquakes are plotted in a single figure to visualize the spatial relationship between the two slip distributions.
+    \item To plot the contours we distributed the absolute slip values into 5 equal intervals starting from minumum slip of 8cm and plotted the contours for both earthquakes in a single figure. 
+\end{itemize}
+\subsubsection{Comparison between source time functions of the 2015 and 2025 earthquakes}
+\begin{itemize}
+    \item The STFs are plotted for both earthquakes and the differences in the duration, peak amplitude, and overall shape of the STFs are analyzed. 

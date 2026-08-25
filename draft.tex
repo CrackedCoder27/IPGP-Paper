@@ -419,7 +419,10 @@ Enter acknowledgments here. This section is to acknowledge funding, thank collea
 % DO NOT use other cite commands (e.g., \citet, \citep, \citeyear, \nocite, \citealp, etc.).
 %
 
-
+% The included section files can leave an itemize environment open when the
+% main document is finalized. Close it here to avoid ending the document while
+% a list is still active.
+\end{itemize}
 
 \end{document}
 
