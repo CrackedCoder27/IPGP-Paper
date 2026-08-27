@@ -16,6 +16,7 @@
 \usepackage{lineno}
 \usepackage[inline]{trackchanges} %for better track changes. finalnew option will compile document with changes incorporated.
 \usepackage{soul}
+\usepackage{float}
 \linenumbers
 %%%%%%%
 % As of 2018 we recommend use of the TrackChanges package to mark revisions.
@@ -199,10 +200,11 @@ Will be done Later.
 %
 % \section{Conclusions}
 
-
+\newpage
 \input{sections/introduction.tex}
-\input{sections/data_method.tex}
 
+\input{sections/data_method.tex}
+\input{sections/results.tex}
 
 %%
 
@@ -423,7 +425,7 @@ Enter acknowledgments here. This section is to acknowledge funding, thank collea
 % main document is finalized. Close it here to avoid ending the document while
 % a list is still active.
 \end{itemize}
-
+\bibliography{agusample}
 \end{document}
 
 
