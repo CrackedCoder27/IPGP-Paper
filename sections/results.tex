@@ -18,39 +18,43 @@
 \begin{figure}[H]
     \centering
 
-    \centering
-    \resizebox{0.9\textwidth}{!}{
+    \resizebox{0.6\textwidth}{!}{
+        \begin{minipage}{\textwidth}
+            \centering
             % ---------- 2015 ----------
-            \begin{subfigure}{0.48\textwidth}
+            \begin{subfigure}{0.5\textwidth}
+           
                 \centering
                 \includegraphics[width=\textwidth]{diagrams/2015_Charlie_Gibbs_station_distribution_focal_mechanism.png}
                 \caption{}
                 \label{fig:2015_station}
             \end{subfigure}
             \hfill
-            \begin{subfigure}{0.48\textwidth}
+            \begin{subfigure}{0.4\textwidth}
                 \centering
                 \includegraphics[width=\textwidth]{diagrams/2015_RSTF_azimuthal.png}
                 \caption{}
                 \label{fig:2015_rstf}
             \end{subfigure}
 
-            \vspace{0.2cm}
+            \vspace{0.1cm}
 
             % ---------- 2025 ----------
-            \begin{subfigure}{0.48\textwidth}
+            \begin{subfigure}{0.5\textwidth}
                 \centering
                 \includegraphics[width=\textwidth]{diagrams/2025_Charlie_Gibbs_station_distribution_focal_mechanism.png}
                 \caption{}
                 \label{fig:2025_station}
             \end{subfigure}
             \hfill
-            \begin{subfigure}{0.48\textwidth}
+            \begin{subfigure}{0.4\textwidth}
                 \centering
                 \includegraphics[width=\textwidth]{diagrams/2025_RSTF_azimuthal.png}
                 \caption{}
                 \label{fig:2025_rstf}
             \end{subfigure}
+        \end{minipage}
+    
     }
     \caption{Relative source time functions (RSTFs) from Love wave analysis (Projected Landweber Method) and station
      distributions for the 2015 and 2025 Charlie--Gibbs earthquakes. (a) Station distribution used for the determination of RSTFs 
@@ -69,6 +73,7 @@
 \begin{itemize}
     \item The fault slip distribution inversion is based on the analysis of the worldwise broadand teleseismic P- and S-wave data 
     shown in Figure~\ref{fig:2015_tele_station} and Figure~\ref{fig:2025_tele_station}.
+\hfill
     \item Using the same fault geometry for both earthquakes, we inverted for the fault slip distribution. The resulting models 
     show good agreement between the observed and predicted teleseismic waveforms for both events, as shown in 
     Figure~\ref{fig:2015_tele_inversion} and Figure~\ref{fig:2025_tele_inversion}. The aggregate RMS misfit is 0.394 for the 2015 
@@ -76,7 +81,7 @@
 \begin{figure}[H]
     \centering
 
-    \resizebox{0.9\textwidth}{!}{%
+    \resizebox{0.8\textwidth}{!}{%
         \begin{minipage}{\textwidth}
             \centering
 
@@ -126,7 +131,7 @@
     \label{fig:teleseismic_inversion}
 
 \end{figure}
-
+\hfill
     \item And the RSTFs obtained from the inverted slip distribution also show good agreement too with the observed RSTFs, as shown
      in Figure~\ref{fig:rstf_inversion} having an aggregate rms of 0.126 for 2025 and 0.128 for 2015.
 
@@ -181,7 +186,6 @@
      The star marks the hypocenter. Red contours show the slip distribution with slip values starting from 9cm.}
     \label{fig:slip_distribution_2015}
 \end{figure}
-\newpage
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{diagrams/slip_rake_2025.png}
