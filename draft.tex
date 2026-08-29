@@ -20,6 +20,9 @@
 \usepackage{subcaption}
 \usepackage{graphicx}
 \usepackage{caption}
+\usepackage{enumitem}
+\setlength{\textfloatsep}{5pt}
+\setlength{\intextsep}{5pt}
 \captionsetup[figure]{font=scriptsize} % Options: small, footnotesize, scriptsize
 \linenumbers
 %%%%%%%
@@ -210,7 +213,7 @@ Will be done Later.
 \input{sections/data_method.tex}
 \newpage
 \input{sections/results.tex}
-
+\input{sections/discussions.tex}
 
 %%
 
@@ -430,7 +433,7 @@ Will be done Later.
 % The included section files can leave an itemize environment open when the
 % main document is finalized. Close it here to avoid ending the document while
 % a list is still active.
-\end{itemize}
+% \end{itemize}
 \bibliography{agusample}
 \end{document}
 

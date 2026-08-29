@@ -68,13 +68,14 @@
     \label{fig:2015_2025_comparison}
 
 \end{figure}
-
+\end{itemize}
 \subsection{Joint inversion results}
-\begin{itemize}
-    \item The fault slip distribution inversion is based on the analysis of the worldwise broadand teleseismic P- and S-wave data 
+\begin{itemize}[label=--,itemsep=2pt, topsep=0pt]
+    \item The fault slip distribution inversion is based on the analysis of the worldwise broadand teleseismic
+     P- and S-wave data 
     shown in Figure~\ref{fig:2015_tele_station} and Figure~\ref{fig:2025_tele_station}.
-\hfill
     \item Using the same fault geometry for both earthquakes, we inverted for the fault slip distribution. The resulting models 
+
     show good agreement between the observed and predicted teleseismic waveforms for both events, as shown in 
     Figure~\ref{fig:2015_tele_inversion} and Figure~\ref{fig:2025_tele_inversion}. The aggregate RMS misfit is 0.394 for the 2015 
     earthquake and 0.453 for the 2025 earthquake.
@@ -131,7 +132,8 @@
     \label{fig:teleseismic_inversion}
 
 \end{figure}
-\hfill
+
+
     \item And the RSTFs obtained from the inverted slip distribution also show good agreement too with the observed RSTFs, as shown
      in Figure~\ref{fig:rstf_inversion} having an aggregate rms of 0.126 for 2025 and 0.128 for 2015.
 
@@ -178,6 +180,23 @@
     rupture velocity of around 2.7 km/s for 2015 which is consistent with the findings of 2-4 km/s \citeA{Aderhold2016}, and 
     3.1 km/s for 2025. These results indicate that the two earthquakes had different rupture characteristics, with the 2025 event
     being more spatially extended and having a longer duration than the 2015 event.
+    \item The comparison of the retrieved source time functions shows differences in how the two events unfolded over time. The 2015
+     earthquake had a rupture duration of about 35 seconds with a strong peak in moment rate. In contrast the 2025 earthquake released
+      moment at a lower amplitude but over a longer period lasting around 60 seconds. These patterns highlight rupture behaviors, 
+      between the two events. STFs are shown in Figure~\ref{fig:stf_comparison}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{diagrams/stf_comparison.png}
+    \caption{Comparison of the source-time functions for the 2015 and 2025 Charlie--Gibbs earthquakes. 
+    The blue and red curves show the moment-rate functions for the 2015 and 2025 earthquakes, respectively. The 2015 earthquake
+     has most of its moment release concentrated within the first $\sim$30~s, whereas the 2025 earthquake exhibits moment release
+      over a longer time interval, extending to approximately 60~s.}
+    \label{fig:stf_comparison}
+\end{figure}
+
+    \item The rake distribution for both earthquakes is shown in Figure~\ref{fig:slip_distribution_2015} and 
+        Figure~\ref{fig:slip_distribution_2025}. Both earthquakes show similar rake patterns towards west direction with average 
+        rake amount of 175° and 184° for the 2015 and 2025 earthquakes, respectively.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{diagrams/slip_rake_2015.png}
@@ -194,10 +213,6 @@
      The star marks the hypocenter. Red contours show the slip distribution with slip values starting from 9cm.}
     \label{fig:slip_distribution_2025}
 \end{figure}
-
-    \item The rake distribution for both earthquakes is shown in Figure~\ref{fig:slip_distribution_2015} and 
-        Figure~\ref{fig:slip_distribution_2025}. Both earthquakes show similar rake patterns towards west direction with average 
-        rake amount of 175° and 184° for the 2015 and 2025 earthquakes, respectively.
 
     \item The 2015 earthquake shows a relatively concentrated slip distribution, with the main asperity confined to the 0- -60~km (Figure~\ref{fig:slip_distribution_2015})
      section along strike. In contrast, the 2025 earthquake exhibits a more distributed slip pattern with multiple asperities. 
@@ -216,7 +231,10 @@
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{diagrams/slip_contours_2015_2025.png}
-    \caption{}
+    \caption{Comparison of the inverted slip distributions for the 2015 and 2025 Charlie--Gibbs earthquakes on the same fault geometry. 
+    The color-filled distribution represents the 2015 slip amplitude, with red contours showing the 2015 slip distribution and cyan
+     contours showing the 2025 slip distribution. Red and cyan stars mark the hypocenters of the 2015 and 2025 earthquakes, respectively.
+      The horizontal and vertical axes represent distance along strike and down dip, respectively.}
     \label{fig:slip_contours_2015_2025}
 \end{figure}
 
