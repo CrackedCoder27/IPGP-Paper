@@ -13,16 +13,16 @@
 \subsubsection{Data Selection and Teleseismic Preprocessing for Inversion}
 \begin{itemize}
     \item Continuous three-component waveform time series and corresponding metadata were retrieved for the 2015 and 2025 earthquakes 
-    from the GEOSCOPE database from the networks: IU, II, GT, G, GE, DK, CN.
+    from the GEOSCOPE and other broad-band databases from the networks: IU, II, GT, G, GE, DK, CN.
     \item For RSTF deconvolution, we retrieved data for a radius of 40 degrees around the epicentres of the 2015 and 2025 earthquakes.
     \item For RSTF analysis, we selected the same earthquake which happened on 05/04/2025 as our EGF. Why this earthquake was selected
      as EGF will be explained in the supporting information section.
     \item Instrument response was also removed to maintain the homogeneity of the data.
     \item For teleseismic phase picking, we selected data for a radius of 80 degrees to avoid upper-mantle triplications and core 
-    reflections.
+    reflections \cite{heaton1990}.
     \item The teleseismic P- and S-wave data were windowed for 70 and 115 s, respectively, with arrival-time uncertainties of 2.5 
-    and 7 s. The waveforms were processed using low- and broadband smoothing periods of 33 and 8 s, respectively, and a high-frequency 
-    cutoff of 0.005 Hz was applied.
+    and 7 s (for automated phase picking). The waveforms were processed using low- and broadband smoothing periods of 33 and 8 s, respectively, and 0.005Hz of 
+    third-order Butterworth low-pass filter is applied. Each filter was applied twice.
 \end{itemize}
 \subsubsection{Finite-fault kinematic inversion}
 \subsubsection*{Fault Plane Geometry}{}
@@ -51,7 +51,7 @@
 
 
 
-\textbf{2025 earthquake}
+\textbf{2025 earthquake (Same as 2015 earthquake as fault geometry should not change with earthquake)}\\
 \begin{itemize}
     \item Strike: $98^\circ$
     \item Initial dip: $75^\circ$
@@ -84,7 +84,8 @@
 \subsubsection*{Inverted Source Parameters}
 \hfill
 The finite-fault inversion solves for the spatial and temporal characteristics of
-the rupture. The principal source parameters include: slip amplitude, rake, spatial variation in fault dip
+the rupture. The principal source parameters include: spatial distribution of slip amplitude, rake, spatial variation in fault dip, source time function (STF)
+of the earthquake and rupture velocity
 
 \subsubsection*{Inversion Configuration}
 \hfill
@@ -97,19 +98,6 @@ The principal numerical parameters used in the finite-fault inversion include:
 
 The complete inversion parameter configuration is provided in the Supporting
 Information.
-\hfill
-\subsubsection*{Final Inversion Products}
-\hfill
-For each earthquake, the inversion provides:
-\hfill
-\begin{itemize}
-    \item Slip distribution
-    \item Rake distribution
-    \item Rupture-time distribution
-    \item Dip distribution
-    \item Synthetic waveforms
-    \item Observed--synthetic waveform misfit
-\end{itemize}
 
 \subsubsection{Comparison of the 2015 and 2025 earthquake slip distributions}
 \begin{itemize}
