@@ -27,16 +27,16 @@
 
     \item Our particular interest are the 2015 ($M_w$ 7.1) and 2025 ($M_w$ 6.9) earthquake sequences, which occurred along the same fault system within a ten-year interval. Their close 
     temporal and spatial association provides an opportunity to investigate earthquake recurrence, rupture segmentation, and variations in slip distribution along 
-    the fault system (Figure~\ref{fig:Charlie_Gibbs_seismicity}).
+    the fault system (Figure~\ref{fig:spatial_seismicity}).
 
 
 \end{itemize}
 
 \subsection{Unresolved Questions and Study Objectives}
 \begin{itemize}
-    \item As shown in Figure~\ref{fig:Charlie_Gibbs_seismicity}, the 2025 earthquake occurred only about 10 years after the 2015 
+    \item As shown in Figure~\ref{fig:charlie_gibbs_seismicity}, the 2025 earthquake occurred only about 10 years after the 2015 
     earthquake and affected the same section of the Charlie--Gibbs transform fault. Such a short recurrence interval is not evident 
-    in the historical seismicity of the fault (Figure~\ref{fig:Charlie_Gibbs_seismicity}(c)). Given the relatively slow plate motion
+    in the historical seismicity of the fault (Figure~\ref{fig:temporal_seismicity}). Given the relatively slow plate motion
      of $\sim$2.24~cm/yr \cite{DeMets1990}, only about 22~cm of tectonic displacement would accumulate over 10 years. This is much 
      smaller than the several metres of slip typically associated with a large earthquake. The occurrence of two large earthquakes 
      on the same fault segment within such a short time interval is therefore unexpected in the framework of a simple stress-loading 
@@ -45,12 +45,44 @@
     \item To investigate: Are the slip distributions of the 2015 and 2025 earthquakes similar or different? If different, what are
      the implications for stress accumulation and release along the fault system?
 \end{itemize}
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{diagrams/Charlie_Gibbs_seismicity-mh.png}
 
-    \caption{
-    Seismicity and tectonic setting of the northern Charlie--Gibbs transform fault.
+    \resizebox{0.8\textwidth}{!}{%
+        \begin{minipage}{\textwidth}
+            \centering
+
+            % ---------- 2015 ----------
+            % \begin{subfigure}{0.2\textwidth}
+            %     \centering
+            %     \includegraphics[width=\textwidth]{diagrams/earth_bathymetry.png}
+            %     \caption{}
+            %     \label{fig:2015_tele_station}
+            % \end{subfigure}
+            % \hfill
+            \begin{subfigure}{0.80\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{diagrams/seismicity.png}
+                \caption{}
+                \label{fig:spatial_seismicity}
+            \end{subfigure}
+
+            \vspace{0.2cm}
+
+            % ---------- 2025 ----------
+            \begin{subfigure}{0.85\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{diagrams/temporal_seismicity.png}
+                \caption{}
+                \label{fig:temporal_seismicity}
+            \end{subfigure}
+
+        \end{minipage}%
+
+    }
+
+    \caption{     Seismicity and tectonic setting of the northern Charlie--Gibbs transform fault.
     (a) Regional tectonic setting shown on a global bathymetric map derived from
     the GMT Earth Relief dataset.
     (b) Detailed bathymetric map of the northern Charlie--Gibbs transform fault,
@@ -65,8 +97,33 @@
     illustrating the spatial and temporal recurrence of major earthquakes along
     the Charlie--Gibbs transform fault. Bathymetric data are from GMT Earth
     Relief; the 15-arc-sec regional grid is based on SRTM15+ V2.1 and the
-    3-arc-sec detailed grid is based on SRTM3S.
-    }
-    \label{fig:Charlie_Gibbs_seismicity}
+    3-arc-sec detailed grid is based on SRTM3S.}
+
+    \label{fig:charlie_gibbs_seismicity}
 
 \end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.9\textwidth]{diagrams/Charlie_Gibbs_seismicity-mh.png}
+
+%     \caption{
+%     Seismicity and tectonic setting of the northern Charlie--Gibbs transform fault.
+%     (a) Regional tectonic setting shown on a global bathymetric map derived from
+%     the GMT Earth Relief dataset.
+%     (b) Detailed bathymetric map of the northern Charlie--Gibbs transform fault,
+%     based on the 3-arc-sec GMT Earth Relief grid (SRTM3S), with the fault trace
+%     shown as a solid line refering from Aderhold et al. (2016). Earthquake epicenters are from
+%     USGS ComCat, with magnitudes compiled from USGS ComCat and historical
+%     earthquake catalogues where available. Circle sizes scale with earthquake
+%     magnitude. The 1967 ($M_w$ 7.0), 1974 ($M_w$ 6.9), and 1998 ($M_w$ 6.8)
+%     earthquakes are shown as colored circles, while the 2015 ($M_w$ 7.1) and
+%     2025 ($M_w$ 6.9) earthquakes are shown as stars.
+%     (c) Temporal distribution of earthquakes as a function of longitude,
+%     illustrating the spatial and temporal recurrence of major earthquakes along
+%     the Charlie--Gibbs transform fault. Bathymetric data are from GMT Earth
+%     Relief; the 15-arc-sec regional grid is based on SRTM15+ V2.1 and the
+%     3-arc-sec detailed grid is based on SRTM3S.
+%     }
+%     \label{fig:Charlie_Gibbs_seismicity}
+
+% \end{figure}
