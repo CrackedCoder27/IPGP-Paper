@@ -1,0 +1,89 @@
+\documentclass[11pt,a4paper]{article}
+
+% Page layout and typography
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% Mathematics
+\usepackage{amsmath,amssymb,amsfonts,mathtools}
+
+% Figures, tables, and captions
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% References and links
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+
+% Convenient formatting
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{enumitem}
+
+\title{Supplementary Material}
+\author{}
+\date{}
+\begin{document}
+
+\begin{figure}[H]
+    \centering
+
+    \resizebox{0.8\textwidth}{!}{%
+        \begin{minipage}{\textwidth}
+            \centering
+
+            % ---------- 2015 ----------
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{diagrams/2015_Charlie_Gibbs_station_distribution_focal_mechanism.png}
+                \caption{}
+                \label{fig:2015_rstf_station}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{diagrams/2025_Charlie_Gibbs_station_distribution_focal_mechanism.png}
+                \caption{}
+                \label{fig:2025_rstf_station}
+            \end{subfigure}
+            % \hfill
+
+
+            \vspace{0.1cm}
+
+            % ---------- 2025 ----------
+
+            % \hfill
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{diagrams/2015_Charlie_Gibbs_P_S_station_distribution.png}
+                \caption{}
+                \label{fig:2015_tele_station}
+            \end{subfigure}
+            \hfill
+            \begin{subfigure}{0.45\textwidth}
+                \centering
+                \includegraphics[width=\textwidth]{diagrams/2025_Charlie_Gibbs_P_S_station_distribution.png}
+                \caption{}
+                \label{fig:2025_tele_station}
+            \end{subfigure}
+            \hfill
+
+        \end{minipage}%
+    }
+
+    \caption{Station distribution for the 2015 and 2025 Charlie--Gibbs earthquakes. a) Distribution of stations used for the RSTF inversion for the 2015 earthquake. 
+    b) Distribution of stations used for the RSTF inversion for the 2025 earthquake. c) Distribution of stations used for the teleseismic inversion for the 2015
+     earthquake. d) Distribution of stations used for the teleseismic inversion for the 2025 earthquake. The focal mechanisms are shown in each panel, with red 
+     and cyan stars marking the hypocenters of the 2015 and 2025 earthquakes, respectively.}
+
+    \label{fig:station_distribution}
+
+\end{figure}
+\end{document}
